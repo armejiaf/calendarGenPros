@@ -1,0 +1,47 @@
+.calendarDiv{
+	max-width: 300px;
+	max-height: 300px;
+}
+.calendar{
+    background-color: #ffffff;
+    font: normal 15px Helvetica Neue, Helvetica, Arial, sans-serif;
+    min-width: 300px;
+}
+
+.calendar{
+    position: relative;
+    width: 100%;
+}
+
+.calendar:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.calendar .row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.calendar .cell{
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+	max-height: 25px;
+}
+
+.calendar .head{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.calendar .title{
+	padding-top:-5px;
+    background-color: #ccffcc;
+}
