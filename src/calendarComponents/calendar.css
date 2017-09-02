@@ -1,11 +1,11 @@
 .calendarDiv{
-	max-width: 300px;
-	max-height: 300px;
+	max-width: 200px;
+	max-height: 200px;
 }
 .calendar{
     background-color: #ffffff;
     font: normal 15px Helvetica Neue, Helvetica, Arial, sans-serif;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 .calendar{
@@ -44,4 +44,46 @@
 .calendar .title{
 	padding-top:-5px;
     background-color: #ccffcc;
+}
+
+
+.calendar .weekdays{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.calendar .weekdays .cell{
+    background-color: #ffffff;
+}
+
+.calendar .dates{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 6;
+    flex-basis: 0;
+}
+
+.calendar .dates .row{
+    flex-grow: 1;
+}
+.calendar .dates .cell{
+    background-color: #99ff99;
+    border: solid 1px #ffffff;
+}
+.
+.calendar .cell .date{
+    cursor: pointer;
+    outline: none;
+}
+#green{
+  background-color: #99ff99;
+}
+#yellow{
+  background-color: #fdff00;
+}
+#gray{
+  background-color: #d4d4cc;
+}
+#orange{
+  background-color: #fb9d00;
 }

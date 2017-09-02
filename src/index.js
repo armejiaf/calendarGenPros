@@ -45,6 +45,9 @@ class Form extends React.Component {
   	handleSubmit(event) {
   		if(countryCodeArray.indexOf(this.state.countryCode) >= 0) {
   			this.setState({buttonIsClicked: true});
+  			document.getElementById('numberinput').setAttribute("disabled","disabled");
+  			document.getElementById('textinput').setAttribute("disabled","disabled");
+  			document.getElementById('button').setAttribute("disabled","disabled");
   			event.preventDefault();
 		}else{
 			alert('Invalid country code: ' + this.state.countryCode);
